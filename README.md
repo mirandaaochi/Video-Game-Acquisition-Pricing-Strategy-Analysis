@@ -72,6 +72,10 @@ Next, we can standardize the 40 attributes and determine the number of factors t
 <p align="center" width="100%">
 <img width="512" height="541" alt="PCA" src="https://github.com/user-attachments/assets/c8d2a315-ae84-4db6-af44-b14ffbf04ff3" />
 
+Below are the rotated factor loadings for each of our 40 attributes. Factor loadings show how strongly related the variables are to the underlying factor. They help us determine what the factor represents.
+
+<p align="center" width="100%">
+
 
 
 
