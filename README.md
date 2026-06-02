@@ -55,4 +55,20 @@ Data resources for this project included:
 
 ## Key Analysis
 
+### Task 1: Market Size Estimation
+
+* **2019 Estimation:** Athena specializes in premium RPGs for PC play, and SuperData’s 2019 Year in Review reports that the premium PC games market was $5.2 billion in 2019.
+* **2020 Projection:** SuperData projects the premium PC market to grow to $5.3 billion in 2020, ignoring COVID-19 effects.
+* **Impact of COVID-19:** COVID-19 would likely have a positive impact on the premium PC market. As lockdowns kept consumers at home, demand for digital entertainment and online social interaction would be expected to increase. However, this impact may only be short-term, as consumer gaming time and premium game spending could go back to normal once restrictions are lifted.
+
+### Task 2: Customer Segmentation
+
+**Factor Analysis**
+
+To identify potential segments in the market, we can first perform factor analysis on our 40 statement variables. We must first evaluate the data using Bartlett’s Test of Sphericity and the KMO-test to determine if factor analysis is appropriate. With Bartlett’s Test of Sphericity, we want p < 0.05. With the KMO-test, we want an overall MSA > 0.6. Both tests passed these thresholds (p = 0.0, MSA ≈ 0.89), so we can proceed with factor analysis.
+
+
+
+
+
 ## Business Recommendations
