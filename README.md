@@ -19,7 +19,39 @@ Data resources for this project included:
 
 ## Methodology
 
+1. Assess Market Size
+    * Determine the market size for the types of games Athena sells in 2019.
+    * Project the market size in 2020, ignoring COVID-19.
+
+2. Identify Potential Segments from the Survey Data
+    * Use factor analysis to identify the most relevant survey statements for each factor.
+    * Perform cluster analysis (K-means) to identify segments and their most relevant factors.
+    * Use cross tabulation and regression analysis to investigate the relationship between the segments and various demographic attributes (gender, age, income, location).
+    
+3. Investigate Gabor Granger Responses
+    * Address missing data.
+    * Plot the percent of customers willing to pay and the predicted revenue as a function of price to determine the ideal price point for each game.
+    * Use linear regression to predict which segments are most and least interested in each game.
+    * Find the gross and net revenues for each game in the first year with the assumption that 30% of respondents will actually purchase the game within the first year.
+
+4. Provide final recommendations.
+
 ## Skills
+
+**Programming**
+- Python
+
+**Statistical & Analytical Techniques**
+- Factor Analysis (PCA, Varimax Rotation)
+- K-Means Clustering
+- Cross Tabulation
+- OLS Regression
+- Multinomial Logistic Regression
+
+**Modeling & Business Applications**
+- Gabor–Granger Pricing Optimization
+- Revenue Forecasting
+- Customer Segmentation 
 
 ## Key Analysis
 
