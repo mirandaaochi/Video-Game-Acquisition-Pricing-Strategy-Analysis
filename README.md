@@ -67,6 +67,15 @@ Data resources for this project included:
 
 To identify potential segments in the market, we can first perform factor analysis on our 40 statement variables. We must first evaluate the data using Bartlett’s Test of Sphericity and the KMO-test to determine if factor analysis is appropriate. With Bartlett’s Test of Sphericity, we want p < 0.05. With the KMO-test, we want an overall MSA > 0.6. Both tests passed these thresholds (p = 0.0, MSA ≈ 0.89), so we can proceed with factor analysis.
 
+Next, we can standardize the 40 attributes and determine the number of factors that emerge from the data using PCA. We want the factors to explain roughly 70% or more of the variance in the data, so we will focus on the factors with an eigenvalue > 1. From the PCA results, 11 factors have eigenvalues > 1, so we can use 11 factors to explain the 40 attributes.
+
+<p align="center" width="100%">
+<img width="512" height="541" alt="PCA" src="https://github.com/user-attachments/assets/c8d2a315-ae84-4db6-af44-b14ffbf04ff3" />
+
+
+
+
+
 
 
 
