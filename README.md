@@ -164,5 +164,128 @@ The resulting demographic attributes (% female, average age, and average income)
 
 ### Task 3: Gabor Granger Response Investigation
 
+**Addressing the Missing Data**
+
+Each respondent was randomly presented with one of the three games (Warrior Guild, Seraph Guardians, or Evercrest). The survey identified the maximum price point at which each respondent would “probably purchase” the presented game, but there are 138 missing values – 40 for Warrior Guild, 47 for Seraph Guardians, and 51 for Evercrest. This accounts for about 5.4% of Warrior Guild data missing, 6.2% of Seraph Guardians, and 7.5% of Evercrest.
+
+Since deletion would reduce the sample size and potentially alter the relationships between variables, we can use regression imputation to replace missing values with predicted scores from regression. This method gives better results compared to the other methods but risks overestimation of the model fit and correlations. 
+
+**Gabor Granger Plots & Optimal Prices**
+
+_Warrior Guild_
+
+The ideal price point for Warrior Guild is $35. This is the price that corresponds with the maximum amount of revenue ($18,620) with about 71.51% of the surveyed customers willing to pay that price. 
+
+<p align="center">
+<img width="49%" alt="Warrior Guild WTP" src="https://github.com/user-attachments/assets/3cb397c3-81cb-4b36-9697-1d39173128d6"/>
+<img width="49%" alt="Warrior Guild Revenue" src="https://github.com/user-attachments/assets/216db45f-43bd-4e95-8ce1-51c0a469835e"/>
+</p>
+
+_Seraph Guardians_
+
+The ideal price point for Seraph Guardians is $32. This is the price that corresponds with the maximum amount of revenue ($18,560) with about 76.72% of the surveyed customers willing to pay that price.
+
+<p align="center">
+<img width="49%" alt="Seraph Guardians WTP" src="https://github.com/user-attachments/assets/0ea8a724-594e-4bf0-9341-11fd93e6ee43" />
+<img width="49%" alt="Seraph Guardians Revenue" src="https://github.com/user-attachments/assets/113c8336-cf8b-40f9-878c-01760d2d178b" />
+</p>
+
+_Evercrest_
+
+The ideal price point for Evercrest is also $32. This is the price that corresponds with the maximum amount of revenue ($15,808) with about 72.86% of the surveyed customers willing to pay that price.
+
+<p align="center">
+<img width="49%" alt="Evercrest WTP" src="https://github.com/user-attachments/assets/2a34b6cc-0b30-4678-ac96-7de02ee90112" />
+<img width="49%" alt="Evercrest Revenue" src="https://github.com/user-attachments/assets/102c56b8-d58b-4dfa-86c5-b1ed89fe7f4d" />
+</p>
+
+**Linear Regressions (Interest Levels)**
+
+_Warrior Guild_
+
+“Completion-Focused/Non-Story Players”  (willing to pay $52.92) and “Completion/Story Fans” (willing to pay $53.14) are the most interested in Warrior Guild. “Explorers” are the least interested (willing to pay $37.51).
+
+“Completion-Focused/Non-Story Players” is the baseline group with a max price of about $52.92. “Completion/Story Fans” are willing to pay about $0.22 more than the baseline on average, for a total of $53.14. The rest of the segments have negative coefficients, meaning they’re willing to pay less than the baseline on average. “Explorers” are willing to pay about $15.41 less, for a total of $37.51. “Fast-Paced Action Fans” are willing to pay about $7.87 less, for a total of $45.05. “Non-Competitive/Non-Action Players” are willing to pay about $9.47 less, for a total of $43.45. “Strategic Non-Violent Storytellers” are willing to pay about $11.71 less, for a total of $41.21. “Strategy/Exploratory Team Players” are willing to pay about $6.69 less, for a total of $46.23. “Violence/Story Fans” are willing to pay about $3.13 less, for a total of $49.79. 
+
+All of the coefficients are statistically significant except for “Completion/Story Fans.” This indicates that these differences in willingness to pay across the other segments are meaningful.
+
+<p align="center">
+<img width="812" height="479" alt="Warrior Guild Interest" src="https://github.com/user-attachments/assets/668e5c87-ba52-4d0b-82d7-e83546c2c64a" />
+
+_Seraph Guardians_
+
+“Completion/Story Fans” (willing to pay $61.30) are the most interested in Seraph Guardians, and “Explorers” are the least interested (willing to pay $31.12).
+
+“Completion-Focused/Non-Story Players” is the baseline group with a max price of about $53.64. “Completion/Story Fans” are willing to pay about $7.66 more than the baseline on average, for a total of $61.30. Once again, the rest of the segments have negative coefficients, meaning they’re willing to pay less than the baseline on average. “Explorers” are willing to pay about $22.52 less, for a total of $31.12. “Fast-Paced Action Fans” are willing to pay about $9.25 less, for a total of $44.39. “Non-Competitive/Non-Action Players” are willing to pay about $7.23 less, for a total of $46.41. “Strategic Non-Violent Storytellers” are willing to pay about $13.40 less, for a total of $40.24. “Strategy/Exploratory Team Players” are willing to pay about $6.62 less, for a total of $47.02. “Violence/Story Fans” are willing to pay about $3.66 less, for a total of $49.98. 
+
+All of the coefficients are statistically significant, so these differences in willingness to pay across the other segments are meaningful. 
+
+<p align="center">
+<img width="811" height="479" alt="Seraph Guardians Interest" src="https://github.com/user-attachments/assets/e06d8688-a202-4b0e-849a-502e17e2e2df" />
+
+_Evercrest_
+
+“Completion-Focused/Non-Story Players” (willing to pay $53.47) and “Completion/Story Fans” (willing to pay $56.16) are the most interested in Evercrest. As we’ve seen with both Warrior Guild and Seraph Guardians, “Explorers” are the least interested (willing to pay $32.83).
+
+“Completion-Focused/Non-Story Players” is the baseline group with a max price of about $53.47. “Completion/Story Fans” are willing to pay about $2.69 more than the baseline on average, for a total of $56.16. Like with the other two games, the rest of the segments have negative coefficients, meaning they’re willing to pay less than the baseline on average. “Explorers” are willing to pay about $20.64 less, for a total of $32.83. “Fast-Paced Action Fans” are willing to pay about $10.78 less, for a total of $42.69. “Non-Competitive/Non-Action Players” are willing to pay about $8.94 less, for a total of $44.53. “Strategic Non-Violent Storytellers” are willing to pay about $6.50 less, for a total of $46.97. “Strategy/Exploratory Team Players” are willing to pay about $7.93 less, for a total of $45.54. “Violence/Story Fans” are willing to pay about $6.89 less, for a total of $46.58. 
+
+Similar to Warrior Guild, all of the coefficients are statistically significant except for “Completion/Story Fans.” This indicates that these differences in willingness to pay across the other segments are meaningful.
+
+<p align="center">
+<img width="811" height="479" alt="Evercrest Interest" src="https://github.com/user-attachments/assets/9bc7a45d-6f26-4eb9-a8cc-e763999595bd" />
+
+**First Year Gross and Net Revenues**
+
+Athena must pay 5% in royalties on the gross revenue to the original developer and spend $7 million to acquire and market the game. Warrior Guild costs an additional $5 million to finalize development, Seraph Guardians $5.5 million, and Evercrest $6 million. Additionally, Steam takes 30% of gross sales up to the first $10 million, 25% between $10 million and $50 million, and 20% after $50 million.
+
+<p align="center">
+<img width="695" height="156" alt="Gross and Net Revenues" src="https://github.com/user-attachments/assets/767af9f8-35dc-4329-bdaf-df87c6507efa" />
+
+_Warrior Guild_
+
+* Ideal Price Point: $35
+* Surveyed Customers Willing to Pay $35: 71.51%
+* Actual Purchases: 2,145,300 
+* Gross Revenue: $35 x 2,145,300 = $75,085,500
+* Total Costs: $15,754,275
+  * Royalites: 5% x $75,085,500 = $3,754,275
+  * Acquisition and Marketing: $7,000,000
+  * Development: $5,000,000
+* Steam's Cut (Gross Sales > $50,000,000): (30% x $10,000,000) + ([$50,000,000 - $10,000,000] x 25%) + ([$75,085,500 - $50,000,000] x 20%) = $18,017,100
+* Net Revenue: $75,085,500 - $15,754,275 - $18,017,100 = $41,314,125
+
+_Seraph Guardians_
+
+* Ideal Price Point: $32
+* Surveyed Customers Willing to Pay $32: 76.72%
+* Actual Purchases: 2,301,600 
+* Gross Revenue: $32 x 2,301,600 = $73,651,200
+* Total Costs: $16,182,560
+  * Royalites: 5% x $73,651,200 = $3,682,560
+  * Acquisition and Marketing: $7,000,000
+  * Development: $5,500,000
+* Steam's Cut (Gross Sales > $50,000,000): (30% x $10,000,000) + ([$50,000,000 - $10,000,000] x 25%) + ([$73,651,200 - $50,000,000] x 20%) = $17,730,240
+* Net Revenue: $73,651,200 - $16,182,560 - $17,730,240 = $39,738,400
+
+_Evercrest_
+
+* Ideal Price Point: $32
+* Surveyed Customers Willing to Pay $32: 72.86%
+* Actual Purchases: 2,185,800
+* Gross Revenue: $32 x 2,185,800 = $69,945,600
+* Total Costs: $16,182,560
+  * Royalites: 5% x $69,945,600 = $3,497,280
+  * Acquisition and Marketing: $7,000,000
+  * Development: $6,000,000
+* Steam's Cut (Gross Sales > $50,000,000): (30% x $10,000,000) + ([$50,000,000 - $10,000,000] x 25%) + ([$69,945,600 - $50,000,000] x 20%) = $16,989,120
+* Net Revenue: $69,945,600 - $16,497,280 - $16,989,120 = $36,459,200
 
 ## Business Recommendations
+
+Warrior Guild was ranked #1 by 287 / 2178 respondents, corresponding to a market share of about 13.18%. Seraph Guardians was ranked #1 by 1090 / 2178 respondents, corresponding to a market share of about 50.05%. Evercrest was ranked #1 by 213 / 2178 respondents, corresponding to a market share of about 9.78%. If Athena chooses not to acquire any of the candidate games, then it wouldn’t capture about 73.01% of the market (13.18% + 50.05% + 9.78%).
+
+**I recommend that Athena acquire Seraph Guardians.** It demonstrates strategic fit with Athena’s existing portfolio and has the strongest market demand based on first-choice rankings and willingness-to-pay results. It also generates high projected net revenue, satisfying financial viability requirements. While Warrior Guild generates slightly higher projected revenue, Seraph Guardians’s demand and strategic alignment make it a stronger candidate. Choosing not to acquire Seraph Guardians would introduce competitive risk since a competitor can capture the unmet demand.
+
+**I recommend pricing Seraph Guardians at a moderate price of $32.** This price maximizes revenue while maintaining a high proportion of customers willing to purchase. It also reinforces Athena’s premium brand positioning and supports market penetration.
+
+**I recommend that Athena uses a targeted approach rather than a non-targeted strategy.** The linear regression results show that willingness to pay varies significantly across segments. Focusing marketing efforts on the most interested segments captures the majority of willing-to-pay customers and maximizes expected net revenue. Specifically, “Completion/Story Fans” have the highest willingness to pay ($61.30), followed by “Completion-Focused/Non-Story Players” ($53.64). Marketing could involve story-driven campaigns for Completion/Story Fans and challenge completion emphasis for both segments. While Athena could adopt a non-targeted approach, many other segments have significantly lower willingness to pay and are less likely to purchase Seraph Guardians, making that strategy less profitable.
